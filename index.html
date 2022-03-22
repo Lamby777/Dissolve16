@@ -5,9 +5,16 @@
 		<meta name="viewport" content="width=device-width">
 		<title>Dissolve16</title>
 		<link href="style.css" rel="stylesheet" type="text/css" />
-		<script src="script.js" defer></script>
+<script src="script.js" defer></script>
 	</head>
 	<body>
 		<canvas id="game" width="400" height="400"></canvas>
+		// How it works: Tiles spawn at 16. When 2 collide,
+		the smaller is subtracted from the larger one. If the
+		result is a negative number, it loops back around to
+		16 and the absolute value is subtracted from 16. New
+		squares spawn every 6 moves. Your goal is to "dissolve"
+		all the squares on the screen by scoring 0s in the
+		least possible moves.
 	</body>
 </html>
